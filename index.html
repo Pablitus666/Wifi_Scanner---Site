@@ -9,6 +9,8 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="WiFi Scanner" />
+  <meta property="og:locale" content="es_ES" />
   <meta property="og:title" content="📡 WiFi Scanner (Windows)" />
   <meta property="og:description"
     content="Aplicación de escritorio para Windows desarrollada en Python que permite escanear redes Wi-Fi almacenadas, visualizar contraseñas y generar reportes profesionales." />
@@ -27,15 +29,24 @@
     content="Aplicación de escritorio para Windows desarrollada en Python que permite escanear redes Wi-Fi almacenadas y generar reportes profesionales." />
   <meta name="twitter:image" content="https://pablitus666.github.io/Wifi_Scanner---Site/assets/og.png" />
 
-  <!-- Redirección SOLO para humanos -->
+  <!-- Redirección SOLO para humanos (no bots sociales) -->
   <script>
-    if (!/bot|crawler|spider|crawling/i.test(navigator.userAgent)) {
-      window.location.replace("https://github.com/Pablitus666/Wifi---Scanner.git");
+    const ua = navigator.userAgent.toLowerCase();
+
+    const isBot = /bot|crawler|spider|crawling|telegrambot|facebookexternalhit|twitterbot|whatsapp/i.test(ua);
+
+    if (!isBot) {
+      window.location.replace("https://github.com/Pablitus666/Wifi---Scanner");
     }
   </script>
 </head>
 
 <body>
   <noscript>
-    <meta http-equiv="refresh" content="0; url=https://github.com/Pablitus666/Wifi---Scanner.git" />
-    </nosc
+    <meta http-equiv="refresh" content="0; url=https://github.com/Pablitus666/Wifi---Scanner" />
+  </noscript>
+
+  <p>Redirigiendo a WiFi Scanner…</p>
+</body>
+
+</html>
